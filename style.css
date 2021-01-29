@@ -1,0 +1,257 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+html {
+  font-size: 60.5%;
+}
+
+/* Global Variables */
+h1 {
+  font-size: 2.6rem;
+}
+li,
+button,
+label,
+input,
+p {
+  font-size: 2rem;
+}
+h2 {
+  font-size: 4.2rem;
+}
+h3 {
+  font-size: 2.4rem;
+  font-weight: normal;
+}
+h4,
+h5 {
+  font-size: 2.8rem;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+button {
+  padding: 1rem 5rem;
+  background: #4c6e97;
+  border: none;
+  color: white;
+  cursor: pointer;
+  transition: background 0.5s ease-in-out;
+}
+button:hover {
+  background: #25374e;
+}
+/* Navbar and Hero Section */
+.main-head {
+  background-color: #131c27;
+  color: white;
+  position: sticky;
+  top: 0;
+}
+nav {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  padding: 1.6rem;
+  min-height: 10vh;
+  align-items: center;
+  flex-wrap: wrap;
+}
+nav ul {
+  display: flex;
+  flex: 1 1 40rem;
+  justify-content: space-around;
+  list-style: none;
+}
+#logo {
+  flex: 2 1 40rem;
+  font-family: "Pattaya", sans-serif;
+  font-weight: 400;
+}
+.hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), transparent),
+    url(/images/landingpage.jpg);
+  min-height: 90vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.hero h3 {
+  padding: 4rem;
+}
+
+/* locations */
+#Locations {
+  min-height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), transparent),
+    url(./images/location.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+.locations-head {
+  width: 90%;
+  margin: auto;
+}
+.locations-head h3 {
+  padding: 4rem 0rem;
+  font-weight: 500;
+}
+.locations-head h2 {
+  padding: 1rem 0rem;
+  text-decoration: underline;
+  text-decoration-thickness: 0.5rem;
+  font-weight: 500;
+}
+/* Cards */
+.benefits-head {
+  background: #343c44;
+  min-height: 30vh;
+  padding: 3rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  color: white;
+}
+.benefits-head h3 {
+  padding: 1rem;
+}
+
+.cards {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  min-height: 70vh;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.card {
+  min-height: 40vh;
+  margin: 2rem 5rem;
+  text-align: center;
+  background: #25374e;
+  color: white;
+  flex: 1 1 25rem;
+  box-shadow: 0px -10px 10px rgba(0, 0, 0, 0.1),
+    0px -20px 20px rgba(0, 0, 0, 0.1);
+}
+.card h4 {
+  padding: 1rem;
+}
+.card img {
+  height: 80px;
+  padding-top: 1rem;
+}
+.card-icon {
+  background: white;
+}
+#contact {
+  min-height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), transparent), url(./images/contact.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.form-wrapper{
+    width: 60%;
+    background: rgba(19, 28, 39, 0.8);
+    color: white;
+    border-radius: 20px;
+}
+.form-head{
+    text-align: center;
+    padding: 4rem;
+}
+.name-form, .email-form{
+    text-align: center;
+    padding:3rem
+}
+.form-wrapper button{
+    width: 100%;
+}
+.form-wrapper label{
+    margin: 0rem 3rem;
+    padding: 2rem;
+}
+.form-wrapper button{
+    padding: 2rem;
+    margin-top: 8rem;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.form-wrapper input{
+    padding: 1rem 3rem;
+}
+footer{
+  color: white;
+  background-color: #131c27;
+}
+.footer-wrapper{
+  display: flex;
+  width: 90%;
+  padding: 2rem;
+  margin: auto;
+  align-items: center;
+  min-height: 10vh;
+  flex-wrap: wrap;
+}
+footer ul{
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  flex: 1 1 40rem;
+  align-items: center;
+}
+footer h5{
+  flex: 40 1 40rem;
+}
+
+
+.footer-wrapper ul li a img{
+  width: 20px;
+}
+
+
+
+
+/* Media Query */
+@media screen and (max-width: 900px) {
+  html {
+    font-size: 45%;
+  }
+  nav {
+    text-align: center;
+  }
+  #logo {
+    padding: 1rem;
+  }
+  .form-wrapper{
+    width: 100%;
+  }
+  footer{
+    text-align: center;
+  }
+  footer h5{
+    padding: 2rem;
+  }
+}
